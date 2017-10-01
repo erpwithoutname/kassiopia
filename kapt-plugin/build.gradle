@@ -1,0 +1,14 @@
+plugins {
+    id "com.jfrog.bintray" version "1.7.3"
+}
+bintray {
+    user = 'chmuchme'
+    key = 'f09920954bd7b3e5ea7eada609f28de9bc1b5411'
+    pkg {
+        repo = 'kassiopia'
+        name = 'kapt-test'
+        userOrg = user
+        licenses = ['AGPL-V3']
+        vcsUrl = 'https://github.com/bintray/gradle-bintray-plugin.git'
+    }
+}
